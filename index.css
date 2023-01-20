@@ -1,0 +1,436 @@
+body{
+    background-color: #1B0A35;
+}
+/*CSS ΜΠΑΡΑΣ ΚΙΝΗΤΟΥ*/
+.overlay {
+     
+  height: 100%;
+  width: 0;
+  position: fixed; 
+  z-index: 1; 
+  left: 0;
+  top: 0;
+  background-color: rgba(0,0,0, 0.9); 
+  overflow-x: hidden; 
+  transition: 0.5s; 
+}
+
+
+.overlay-content {
+  position: relative;
+  top: 25%; 
+  width: 100%; 
+  text-align: center; 
+  margin-top: 30px; 
+}
+
+
+.overlay a {
+  padding: 8px;
+  text-decoration: none;
+  font-size: 36px;
+  color: #818181;
+  display: block; 
+  transition: 0.3s; 
+}
+
+
+.overlay a:hover, .overlay a:focus {
+  color: #f1f1f1;
+}
+
+
+.overlay .closebtn {
+  position: absolute;
+  top: 20px;
+  right: 45px;
+  font-size: 60px;
+}
+
+
+@media screen and (max-height: 450px) {
+  .overlay a {font-size: 20px}
+  .overlay .closebtn {
+    font-size: 40px;
+    top: 15px;
+    right: 35px;
+  }
+}
+
+.topnav {
+  display: inline-flexbox;
+  overflow: hidden;
+  background-color: #493564;
+  position: sticky;
+  z-index: 2;
+  border-top: solid 2px #FCEAFF;
+  border-bottom: solid 2px #FCEAFF;
+  border-radius: 20px;
+  
+}
+.topnav1 {
+  display: inline-flexbox;
+  overflow: hidden;
+  background-color: #493564;
+  position: sticky;
+  z-index: 2;
+  border-top: solid 2px #FCEAFF;
+  border-bottom: solid 2px #FCEAFF;
+  border-radius: 20px;
+  
+}
+
+.logo{
+  text-decoration: none;
+  padding: 20px 20px;
+  margin: -20px -20px;
+  background-color: black;
+  color: #FCEAFF;
+  font-size: 20px;
+}
+.topnav-li{
+  display: flex;
+  letter-spacing: 2px;
+  font-family: fantasy;
+  float: left;
+  color: #000000;
+  text-align: center;
+  justify-content: center;
+  text-decoration: none;
+  font-size: 20px;
+  list-style: none;
+  padding: 20px 20px;
+  border-right: #FCEAFF solid 3px;
+}
+
+
+#buttonmenu{
+  font-size: 20px;
+  float: right;
+  margin-top: 10px;
+  padding: 16px ;
+  display: flex;
+  list-style: none;
+  color: #f1f1f1;
+
+}
+/* CSS ΤΗΣ ΜΠΑΡΑΣ*/
+.topnav {
+    display: inline-flexbox;
+    overflow: hidden;
+    background-color: #493564;
+    position: sticky;
+    z-index: 2;
+    border-top: solid 2px #FCEAFF;
+    border-bottom: solid 2px #FCEAFF;
+    border-radius: 20px;
+    
+  }
+  
+  .topnav-li{
+    display: flex;
+    letter-spacing: 2px;
+    font-family: fantasy;
+    float: left;
+    color: #000000;
+    text-align: center;
+    justify-content: center;
+    text-decoration: none;
+    font-size: 20px;
+    list-style: none;
+    padding: 20px 20px;
+    border-right: #FCEAFF solid 3px;
+  }
+
+  .topnavt{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    position: relative;
+    text-decoration: none;
+    margin-top: 3px;
+    padding: 5px;
+    color:black;
+  }
+
+  .topnavt:before{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    height: 3px;
+    width: 0%;
+    background: #FCEAFF;
+    border-radius: 12px;
+    transition: all 0.4s ease;
+  }
+  .topnavt:hover:before{
+    width: 100%;
+    text-decoration: none;
+  }
+  .topnavt.center a:before{
+    left: 50%;
+    transform: translateX(-50%);
+  }
+
+  .logo{
+    text-decoration: none;
+    padding: 20px 20px;
+    margin: -20px -20px;
+    background-color: black;
+    color: #FCEAFF;
+    font-size: 30px;
+  }
+
+  .topnav-right{
+    float: right;
+    margin-top: 10px;
+    padding: 16px ;
+    display: flex;
+    list-style: none;
+  
+  }
+
+  .icons{
+    font-size: 25px;
+    padding: 10px;
+    color:#FCEAFF ;
+    text-align: center;
+    justify-content: center;
+    border-radius: 10px;
+    margin-right: 10px;
+  }
+  .icons:hover{
+    background-color: #FCEAFF;
+    color: black;
+    transition: ease 0.5s;
+  }
+
+  
+
+  @media screen and (max-width: 1340px){
+    .topnav-right{
+      display: none;
+    }
+    
+  }
+  /* ΤΕΛΟΣ ΜΠΑΡΑΣ*/
+
+  .container{
+    display: grid;
+    width: 100%;
+    
+    
+    gap: 1.5rem;
+    grid-template-columns: 48% 48%;
+    padding: 15px;
+    height: max-content;
+    }
+
+    .photo1{
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(135, 112, 143, 0.178);
+      }
+  
+  .column2{
+      
+     
+      border: #FCEAFF solid 2px;
+      border-radius: 20px;
+      box-shadow: 0 10px 20px rgba(135, 112, 143, 0.178);
+      
+  }
+
+  .title1{
+    font-size: 24px;
+    text-align: center;
+    justify-content: center;
+    border-bottom: #493564 solid 3px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #FCEAFF;
+    letter-spacing: 8px;
+    word-spacing: 4px;
+    padding-bottom: 3px;
+}
+
+.keimeno{
+  color: #FCEAFF;
+  border-bottom:  #000000 solid 1px;;
+  font-size: 22px;
+  text-align: justify;
+  padding: 10px;
+  margin: 0%;
+  word-spacing: 2px;
+  letter-spacing: 2px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+@media screen and (max-width: 1480px){
+  .keimeno{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 1300px){
+  .keimeno{
+    font-size: 15px;
+  }
+}
+@media screen and (max-width: 1200px){
+  .keimeno{
+    font-size: 18px;
+  }
+  .container{
+    width: 95%;
+    grid-template-columns: none;
+  }
+  .topnav{
+    display: none;
+  }
+  .logo{
+    font-size: 20px;
+  }
+}
+@media screen and (min-width: 1200px){
+  .topnav1{
+    display: none;
+  }
+
+}
+
+
+
+
+.undername{
+  text-align: center;
+  font-size: 40px;
+  margin-top: 10px;
+  color:#FCEAFF;
+  padding: 10px;
+  font-family:fantasy;
+  border-bottom:#493564 solid 3px ;
+  letter-spacing: 4px;
+  margin-bottom: 20px;
+ }
+ .container1{
+    
+    
+  width: 80%;
+  display: flex;
+  margin-inline: auto;
+  gap: 10rem;
+  margin-bottom: 20px;
+  
+}
+.back1{
+  background-color:#493564 ;
+  
+  
+  border:#FCEAFF solid 3px;
+  border-radius: 30px;
+  
+  transition: 1s;
+}
+.back1:hover{
+  box-shadow: -10px 10px 10px #493564 ;
+}
+.box{
+      background-color: #1B0A35 ;
+      border: #FCEAFF solid 2px;
+      border-radius: 28px;
+      
+      text-align: center;
+      
+      transform: translate(0px);
+      transition: 1s;       
+      
+  }
+.box:hover{
+      
+      transform: translate(10px,-10px); 
+
+}
+
+.photop{
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+}
+.button{
+  background-color:#FCEAFF ;
+  font-size: 22px;
+  margin-top: 20px;
+  width: fit-content;
+  margin-inline: auto;
+  padding: 20px;
+  border-radius: 50px;
+}
+a{
+  text-decoration: none;
+  color: black;
+  font-family: fantasy;
+  letter-spacing: 2px;
+}
+@media screen and (max-width: 1200px){
+  .container1{
+    display: grid;
+    width: 60%;
+  }
+}
+
+
+.final{
+  background-color: #493564;
+  display: grid;
+  place-items: center;
+  margin-left: auto;
+  margin-right: auto;
+  width: 90%;
+  border-radius: 30px;
+  font-size: 25px;
+  font-family: fantasy;
+  padding: 20px;
+  
+}
+
+.container2{
+  display: grid;
+  width: 90%;
+  
+  
+  gap: 1.5rem;
+  grid-template-columns: 48% 48%;
+  padding: 15px;
+  height: max-content;
+  }
+  @media screen and (max-width: 1200px){
+    .container2{
+      font-size: 15px;
+      grid-template-columns: none;
+    }
+  }
+
+  .container3{
+    width: 60%;
+    display: grid;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .keimeno1{
+    color: #FCEAFF;
+    
+    font-size: 23px;
+    text-align: justify;
+    padding: 10px;
+    margin: 0%;
+    word-spacing: 4px;
+    letter-spacing: 3px;
+    margin-top: 40px;
+    margin-bottom: 40px; ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  }
+
+  @media screen and (max-width: 1200px){
+    .keimeno1{
+      font-size: 15px;
+      letter-spacing: 2px;
+    }
+  }
